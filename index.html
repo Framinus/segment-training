@@ -23,8 +23,9 @@
     <textarea cols="81" name="details" required="" rows="10">
     </textarea> 
     <br><br> 
-    Name: <input name="fullname" required="" size="75" type="text"/> 
+    First Name: <input name="firstname" required="" size="75" type="text"/> 
     <br><br> 
+    Last Name: <input name="lastname" required="" size="75" type="text"/>
     Email: <input name="email" required="" size="75" type="email"/> 
     <br><br>
     <input name="submit" type="submit" value="submit"/>
@@ -32,20 +33,23 @@
     <!-- <script type="text/javascript">
       function identify(e){
         e.preventDefault();
-        var form = e.target;
-        var email = form["email"].value;
-        var fullname = form["fullname"].value;
-        var destination = form["destination"].value;
-        var details = form["details"].value;
-        var user = {
+        let form = e.target;
+        let email = form["email"].value;
+        let firstname = form["firstname"].value;
+        let lastname = form["lastname"].value;
+        let destination = form["destination"].value;
+        let details = form["details"].value;
+        let user = {
             email: email, 
-            name: fullname, 
+            firstname: firstname,
+            lastname: lastname,
             destination: destination, 
             details: details
         };
         analytics.identify('1234', {
             email: email, 
-            name: fullname
+            first_name: firstname,
+            last_name: lastname
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
