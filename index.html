@@ -45,12 +45,13 @@
             destination: destination, 
             details: details
         };
-        analytics.identify('00001', {
-            email: email, 
-            first_name: firstname,
-            last_name: lastname
-        });
-        analytics.track('Test event', {property1:'value', email:'test_user4@segment.com'});
+        analytics.reset();
+        // analytics.identify('00001', {
+        //     email: email, 
+        //     first_name: firstname,
+        //     last_name: lastname
+        // });
+        // analytics.track('Test event', {property1:'value', email:'test_user4@segment.com'});
       }
     </script>
 </body> 
