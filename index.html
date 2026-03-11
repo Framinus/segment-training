@@ -50,9 +50,7 @@
             first_name: firstname,
             last_name: lastname
         });
-        analytics.track('destination submitted', user, function() {
-            window.location.href = "";
-        });
+        analytics.track('Test event', {property1:'value', email:'test_user4@segment.com'});
       }
     </script>
 </body> 
