@@ -1,7 +1,12 @@
-body {
+/* body {
   background-color: red;
-}
+} */
 
 /* .twiliowebchat-1a4ndlq {
   visibility: hidden;
 } */
+
+body {
+  margin: 10px;
+  padding: 10px;
+}
