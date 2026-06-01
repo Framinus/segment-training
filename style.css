@@ -1,6 +1,6 @@
-/* body {
+body {
   background-color: red;
-} */
+}
 
 /* .twiliowebchat-1a4ndlq {
   visibility: hidden;
@@ -11,9 +11,12 @@ body {
   padding: 10px;
 }
 
-.twilio-webchat-entry-point {
+#twilio-webchat-widget .twilio-webchat-entry-point {
     width: 200px !important;
     height: 200px !important;
-    bottom: 30px !important; 
-    right: 30px !important;
+}
+
+#twilio-webchat-widget .twilio-webchat-entry-point svg {
+    width: 100px !important;
+    height: 100px !important;
 }
